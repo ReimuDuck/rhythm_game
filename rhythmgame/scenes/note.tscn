@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=3 uid="uid://cvi05jy3kmcl5"]
+
+[ext_resource type="Texture2D" uid="uid://b3t6iy7p7peqo" path="res://assets/rhythm.png" id="1_ja01k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhhb2"]
+atlas = ExtResource("1_ja01k")
+region = Rect2(0, 1284, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcfwc"]
+atlas = ExtResource("1_ja01k")
+region = Rect2(0, 1926, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66a2h"]
+atlas = ExtResource("1_ja01k")
+region = Rect2(1333, 1284, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_832xg"]
+atlas = ExtResource("1_ja01k")
+region = Rect2(1333, 1926, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61ko6"]
+atlas = ExtResource("1_ja01k")
+region = Rect2(2666, 1284, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38vxo"]
+atlas = ExtResource("1_ja01k")
+region = Rect2(2666, 1926, 1333, 642)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vu8ps"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhhb2")
+}],
+"loop": true,
+"name": &"blu",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcfwc")
+}],
+"loop": true,
+"name": &"bluhold",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66a2h")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_832xg")
+}],
+"loop": true,
+"name": &"redhold",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61ko6")
+}],
+"loop": true,
+"name": &"yelw",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38vxo")
+}],
+"loop": true,
+"name": &"yelwhold",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btvda"]
+size = Vector2(1121.25, 186.25)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(340, -211)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(82, -102)
+sprite_frames = SubResource("SpriteFrames_vu8ps")
+animation = &"red"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(40, -79)
+shape = SubResource("RectangleShape2D_btvda")

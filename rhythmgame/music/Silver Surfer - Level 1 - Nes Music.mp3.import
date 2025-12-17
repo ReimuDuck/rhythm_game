@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://66u4incpecoo"
+path="res://.godot/imported/Silver Surfer - Level 1 - Nes Music.mp3-2c971ba91c2b33211ba3f16fc883e6b3.mp3str"
+
+[deps]
+
+source_file="res://music/Silver Surfer - Level 1 - Nes Music.mp3"
+dest_files=["res://.godot/imported/Silver Surfer - Level 1 - Nes Music.mp3-2c971ba91c2b33211ba3f16fc883e6b3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
