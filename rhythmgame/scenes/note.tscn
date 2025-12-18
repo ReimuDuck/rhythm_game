@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://cvi05jy3kmcl5"]
+[gd_scene load_steps=11 format=3 uid="uid://cvi05jy3kmcl5"]
 
 [ext_resource type="Texture2D" uid="uid://b3t6iy7p7peqo" path="res://assets/rhythm.png" id="1_ja01k"]
+[ext_resource type="Script" path="res://scenes/note.gd" id="1_tia5g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fhhb2"]
 atlas = ExtResource("1_ja01k")
@@ -26,7 +27,7 @@ region = Rect2(2666, 1284, 1333, 642)
 atlas = ExtResource("1_ja01k")
 region = Rect2(2666, 1926, 1333, 642)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_vu8ps"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_5qsgd"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -77,19 +78,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_btvda"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1ths"]
 size = Vector2(1121.25, 186.25)
 
-[node name="Node2D" type="Node2D"]
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" groups=["notes"]]
 position = Vector2(340, -211)
+script = ExtResource("1_tia5g")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(82, -102)
-sprite_frames = SubResource("SpriteFrames_vu8ps")
+sprite_frames = SubResource("SpriteFrames_5qsgd")
 animation = &"red"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(40, -79)
-shape = SubResource("RectangleShape2D_btvda")
+shape = SubResource("RectangleShape2D_e1ths")

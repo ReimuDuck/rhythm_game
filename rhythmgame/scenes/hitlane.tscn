@@ -1,0 +1,88 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmjii7oqu03yc"]
+
+[ext_resource type="Script" path="res://scenes/area_2d.gd" id="1_bwrgm"]
+[ext_resource type="Texture2D" uid="uid://b3t6iy7p7peqo" path="res://assets/rhythm.png" id="2_2s1aw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ow2ax"]
+size = Vector2(932, 94.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjkeo"]
+size = Vector2(937.75, 326)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7iul"]
+atlas = ExtResource("2_2s1aw")
+region = Rect2(0, 642, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm1dg"]
+atlas = ExtResource("2_2s1aw")
+region = Rect2(0, 62, 1346, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crpli"]
+atlas = ExtResource("2_2s1aw")
+region = Rect2(1333, 642, 1333, 642)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m35hf"]
+atlas = ExtResource("2_2s1aw")
+region = Rect2(2666, 642, 1333, 642)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7n56j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7iul")
+}],
+"loop": true,
+"name": &"bluhit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rm1dg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crpli")
+}],
+"loop": true,
+"name": &"redhit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m35hf")
+}],
+"loop": true,
+"name": &"yellohit",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62ygj"]
+size = Vector2(929, 194.563)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bwrgm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="perfect" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-8, 25)
+shape = SubResource("RectangleShape2D_ow2ax")
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="meh" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-10, 29)
+shape = SubResource("RectangleShape2D_hjkeo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7n56j")
+
+[node name="Area2D3" type="Area2D" parent="."]
+
+[node name="good" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(-9, 25)
+shape = SubResource("RectangleShape2D_62ygj")

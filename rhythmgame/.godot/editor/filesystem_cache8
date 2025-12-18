@@ -1,17 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1766007541
+::res://::1766092493
+gamemanager.gd::GDScript::-1::1766034185::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::5208563128865950876::1765942605::1765942609::1::::<><>::
-Mainscene.tscn::PackedScene::3864928507909015394::1766006739::0::1::::<><>::
 notes.gd::GDScript::-1::1766007317::0::1::::<>Node<>::
 ::res://assets/::1766005568
 rhythm.png::CompressedTexture2D::4392829306731176726::1766005561::1766005568::1::::<><>::
 rhythmguy.png::CompressedTexture2D::6842882237104176467::1766001400::1766001482::1::::<><>::
 ::res://music/::1766006722
 Silver Surfer - Level 1 - Nes Music.mp3::AudioStreamMP3::2241116431413762690::1766006675::1766006722::1::::<><>::
-::res://scenes/::1766007541
-hit.gd::GDScript::-1::1766007336::0::1::::<>Node2D<>::
-hit.tscn::PackedScene::4214044506232045562::1766007380::0::1::::<><>::res://scenes/hit.gd<>uid://b3t6iy7p7peqo::::res://assets/rhythm.png
-Mainscene.tscn::PackedScene::7745808250588224704::1766005679::0::1::::<><>::
-note.tscn::PackedScene::6264894115525155740::1766007029::0::1::::<><>::uid://b3t6iy7p7peqo::::res://assets/rhythm.png
+::res://scenes/::1766092485
+area_2d.gd::GDScript::-1::1766092268::0::1::::<>Node2D<>::
+gamemanager.tscn::PackedScene::8947142228938756802::1766092478::0::1::::<><>::res://gamemanager.gd
+hit.gd::GDScript::-1::1766034001::0::1::::<>Node2D<>::
+hitlane.tscn::PackedScene::8020609299944776362::1766092478::0::1::::<><>::res://scenes/area_2d.gd<>uid://b3t6iy7p7peqo::::res://assets/rhythm.png
+main.tscn::PackedScene::4032389980803310741::1766092485::0::1::::<><>::res://scenes/hit.gd<>uid://dmjii7oqu03yc::::res://scenes/hitlane.tscn<>uid://cvi05jy3kmcl5::::res://scenes/note.tscn
+note.gd::GDScript::-1::1766092393::0::1::::<>Area2D<>::
+note.tscn::PackedScene::6264894115525155740::1766092478::0::1::::<><>::uid://b3t6iy7p7peqo::::res://assets/rhythm.png<>res://scenes/note.gd
 ::res://scripts/::1766006718
 note.gd::GDScript::-1::1765998937::0::1::::<>Node<>::
