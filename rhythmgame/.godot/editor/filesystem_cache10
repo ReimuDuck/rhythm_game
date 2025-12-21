@@ -1,0 +1,21 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766339966
+gamemanager.gd::GDScript::3682783616704709634::1766158747::0::1::::<>Node<><>0<>0<><>::
+icon.svg::CompressedTexture2D::5208563128865950876::1766158747::1766158747::1::::<><><>0<>0<>3446d5d1bb9c65d852118338e4859ada<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+notes.gd::GDScript::5009181498158534503::1766158747::0::1::::<>Node<><>0<>0<><>::
+::res://assets/::1766158747
+desktop.ini::TextFile::-1::1766158747::0::1::::<><><>0<>0<><>::
+rhythm.png::CompressedTexture2D::4392829306731176726::1766158747::1766158747::1::::<><><>0<>0<>3351bc7528a048fc6ba02d03e7f98d47<>res://.godot/imported/rhythm.png-a8fe6b71f315dfc72d22b6eaef59dca4.ctex::
+rhythmguy.png::CompressedTexture2D::6842882237104176467::1766158747::1766158747::1::::<><><>0<>0<>d585b48cb85098b7a55414c31558b91a<>res://.godot/imported/rhythmguy.png-cd6a843ec5d467a26017c3d1d38f63b1.ctex::
+::res://music/::1766158747
+Silver Surfer - Level 1 - Nes Music.mp3::AudioStreamMP3::2241116431413762690::1766158747::1766158747::1::::<><><>0<>0<>5a79d6ec56d1aecd512f08bbcb1e362d<>res://.godot/imported/Silver Surfer - Level 1 - Nes Music.mp3-2c971ba91c2b33211ba3f16fc883e6b3.mp3str::
+::res://scenes/::1766339925
+area_2d.gd::GDScript::4604827310364745394::1766339914::0::1::::<>Node2D<><>0<>0<><>::
+gamemanager.tscn::PackedScene::8947142228938756802::1766338959::0::1::::<><><>0<>0<><>::uid://bsp7541gl2leg::::res://gamemanager.gd
+hit.gd::GDScript::6442520226317183600::1766339742::0::1::::<>Node2D<><>0<>0<><>::
+hitlane.tscn::PackedScene::8020609299944776362::1766338896::0::1::::<><><>0<>0<><>::uid://b6uu3k8llgfmg::::res://scenes/area_2d.gd<>uid://b3t6iy7p7peqo::::res://assets/rhythm.png
+main.tscn::PackedScene::4032389980803310741::1766339925::0::1::::<><><>0<>0<><>::uid://cx12mqdg32tpo::::res://scenes/hit.gd
+note.gd::GDScript::8218978100471478424::1766339783::0::1::::<>Area2D<><>0<>0<><>::
+note.tscn::PackedScene::6264894115525155740::1766339783::0::1::::<><><>0<>0<><>::uid://b3t6iy7p7peqo::::res://assets/rhythm.png<>uid://dpdlmr82hps3q::::res://scenes/note.gd
+::res://scripts/::1766158912
+note.gd::GDScript::1383696368797036814::1766158747::0::1::::<>Node<><>0<>0<><>::

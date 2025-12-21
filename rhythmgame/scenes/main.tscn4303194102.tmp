@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxpk4yfttotlt"]
+
+[ext_resource type="Script" uid="uid://cx12mqdg32tpo" path="res://scenes/hit.gd" id="1_c2gx8"]
+[ext_resource type="PackedScene" uid="uid://dmjii7oqu03yc" path="res://scenes/hitlane.tscn" id="1_t24ty"]
+[ext_resource type="PackedScene" uid="uid://cvi05jy3kmcl5" path="res://scenes/note.tscn" id="3_an571"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_c2gx8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1367, -3503)
+zoom = Vector2(0.07, 0.07)
+
+[node name="L" parent="." instance=ExtResource("1_t24ty")]
+input_action = "hitL"
+input_hit = "bluhit"
+
+[node name="R" parent="." instance=ExtResource("1_t24ty")]
+position = Vector2(2925, -24)
+input_action = "hitR"
+input_hit = "yellohit"
+
+[node name="C" parent="." instance=ExtResource("1_t24ty")]
+position = Vector2(1504, -28)
+input_action = "hitC"
+input_hit = "redhit"
+
+[node name="Area2D" parent="." instance=ExtResource("3_an571")]
+position = Vector2(-52, 103)
