@@ -18,10 +18,14 @@ func init_attributes(lane: int = 0):
 		input_hit = "yellohit"
 		global_position = Vector2((lane * 1500), 0)
 		input_action = "hitC"
-	else:
+	elif lane == 2:
 		input_hit = "redhit"
 		global_position = Vector2((lane * 1500), 0)
 		input_action = "hitR"
+	else:
+		input_hit = "yellohit"
+		global_position = Vector2((lane * 1500), 0)
+		input_action = "hitD"
 	$AnimatedSprite2D.play("default")
 			
 func _process(_delta):

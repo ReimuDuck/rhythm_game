@@ -20,6 +20,9 @@ func init_attributes(lane: int = 0):
 	elif lane == 1:
 		color = "yelw"
 		global_position = Vector2((lane * 1500), -4550)
+	elif lane == 2:
+		color = "red"
+		global_position = Vector2((lane * 1500), -4550)
 	else:
 		color = "red"
 		global_position = Vector2((lane * 1500), -4550)
@@ -27,5 +30,5 @@ func init_attributes(lane: int = 0):
 
 func _process(delta: float) -> void:
 	position.y += speed * delta
-	emit_signal("note_position", global_position)
+#	emit_signal("note_position", global_position)
 	

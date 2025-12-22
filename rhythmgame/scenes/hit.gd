@@ -7,9 +7,11 @@ func _ready() -> void:
 	spawn_lane(0)
 	spawn_lane(1)
 	spawn_lane(2)
+	spawn_lane(3)
 	spawn_note(0)
 	spawn_note(1)
 	spawn_note(2)
+	spawn_note(3)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
