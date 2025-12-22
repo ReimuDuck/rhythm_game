@@ -1,5 +1,7 @@
+res://scenes/note.tscn
 res://scenes/note.gd
 res://scenes/hitlane.tscn
 res://scenes/area_2d.gd
+res://SignalBus.gd
 res://scenes/hit.gd
-res://scenes/main.tscn
+res://scenes/gamemanager.tscn
