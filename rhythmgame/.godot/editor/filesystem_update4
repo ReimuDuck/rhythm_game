@@ -1,5 +1,4 @@
-res://scenes/note.gd
 res://scenes/hitlane.tscn
-res://scenes/area_2d.gd
-res://scenes/hit.gd
-res://scenes/main.tscn
+res://scenes/scoretext.tscn
+res://scripts/global.gd
+res://scripts/textscore.gd

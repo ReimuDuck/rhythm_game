@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxpk4yfttotlt"]
+[gd_scene load_steps=3 format=3 uid="uid://bxpk4yfttotlt"]
 
 [ext_resource type="Script" uid="uid://cx12mqdg32tpo" path="res://scenes/hit.gd" id="1_c2gx8"]
+[ext_resource type="PackedScene" uid="uid://cgtbbhyo25m08" path="res://scenes/scoretext.tscn" id="2_0wfyh"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_c2gx8")
@@ -8,3 +9,8 @@ script = ExtResource("1_c2gx8")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(3284, -3441)
 zoom = Vector2(0.07, 0.07)
+
+[node name="score" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(-2346, -5348)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

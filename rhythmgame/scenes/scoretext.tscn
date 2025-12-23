@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgtbbhyo25m08"]
+
+[ext_resource type="Script" uid="uid://dldt65epsw5sf" path="res://scripts/textscore.gd" id="1_nsopj"]
+
+[sub_resource type="FontVariation" id="FontVariation_nsopj"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nsopj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = -52.0
+offset_right = 188.0
+offset_bottom = 138.5
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_nsopj")
+theme_override_font_sizes/font_size = 500
+text = "Combo: 000"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 500
+text = "Score: "
+
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 500
+
+[node name="Label4" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 500
