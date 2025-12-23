@@ -6,7 +6,7 @@ var rating = " "
 
 
 func add_combo():
-	combo += 1 
+	combo += .5
 func remove_combo():
 	combo = 0
 	

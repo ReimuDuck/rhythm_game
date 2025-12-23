@@ -10,7 +10,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	combo_lab.text = "Combo: " + str(Global.combo)
+	combo_lab.text = "Combo: " + str(snapped(Global.combo, 1))
 	score_lab.text = "Score: " + str(Global.score)
 	rating.text = Global.rating
 	time.text = str(Gamemanager.song_time)

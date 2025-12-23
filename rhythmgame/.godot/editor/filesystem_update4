@@ -1,11 +1,4 @@
-res://scenes/main.tscn
+res://scenes/hitlane.tscn
+res://scenes/scoretext.tscn
 res://scripts/global.gd
 res://scripts/textscore.gd
-res://scenes/scoretext.tscn
-res://scenes/hitlane.tscn
-res://scenes/note.gd
-res://scenes/gamemanager.tscn
-res://scenes/hit.gd
-res://scenes/note.tscn
-res://scripts/chart.gd
-res://gamemanager.gd

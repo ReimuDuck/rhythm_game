@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgtbbhyo25m08"]
+[gd_scene load_steps=3 format=3 uid="uid://cgtbbhyo25m08"]
 
 [ext_resource type="Script" uid="uid://dldt65epsw5sf" path="res://scripts/textscore.gd" id="1_nsopj"]
+
+[sub_resource type="FontVariation" id="FontVariation_nsopj"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_nsopj")
@@ -20,6 +22,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_nsopj")
 theme_override_font_sizes/font_size = 500
 text = "Combo: 000"
 
