@@ -19,6 +19,9 @@ config/icon="res://icon.svg"
 
 Gamemanager="*res://gamemanager.gd"
 SignalBus="*res://SignalBus.gd"
+Global="*res://scripts/global.gd"
+Chart="*res://scripts/chart.gd"
+Hit="*res://scenes/hit.gd"
 
 [input]
 
